@@ -33,6 +33,21 @@ router.put("/:id", async (req, res) => {
 
 //Deleting a post
 
+router.delete("/:id", async (req, res) => {
+    try {
+        const post = await Post.findById(req.params.id);
+        if (post.userId === req.body.userId) {
+            await post.deleteOne({$set:req.body});
+            res.status(200).json("Post successfully deleted!")
+        } else {
+            res.status(403).json("You can only delete your own post!")
+        }
+
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 //Liking a post
 
 //Getting a post
