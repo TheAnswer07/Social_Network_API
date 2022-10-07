@@ -1,4 +1,4 @@
-const router = require("express").Router;
+const router = require("express").Router();
 const Thought = require("../models/Thought")
 
 //Creating a thought

@@ -10,12 +10,6 @@ const thoughtRoute = require("./routes/thoughts");
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL, 
-    { useNewUrlParser: true, useUnifiedTopology: true }, 
-    () => {
-    console.log("Connected to MongoDB");
-});
-
 
 //Middlewares
 
@@ -27,7 +21,12 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/thoughts", thoughtRoute);
 
-
-app.listen(8800, () => {
-    console.log("Backend server running in Port 8800");
+mongoose.connect(process.env.MONGO_URL, 
+    { useNewUrlParser: true, useUnifiedTopology: true }, 
+    () => {
+    console.log("Connected to MongoDB");
+    
+    app.listen(8800, () => {
+        console.log("Backend server running in Port 8800");
+    });
 });

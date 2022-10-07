@@ -2,6 +2,11 @@ const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
+router.get("/", (req, res) => {
+    res.status(200).json({ message: "authRoute"})
+})
+
+
 //Register
 
 router.post("/register", async (req, res) => {
