@@ -33,7 +33,7 @@ You can contribute to this project by accessing my GitHub page.
 
 ### App GitHub Link:
 
-[GitHub App Link](https://theanswer07.github.io/Social_Network_API/)
+[GitHub App Link](https://github.com/TheAnswer07/Social_Network_API)
 
 ### App Video Link:
 
