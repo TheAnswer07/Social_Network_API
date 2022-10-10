@@ -12,7 +12,7 @@ const ThoughtSchema = new mongoose.Schema({
     img: {
         type: String,
     },
-    likes: {
+    reactions: {
         type: Array,
         default: [],
     },

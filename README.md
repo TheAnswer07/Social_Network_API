@@ -7,35 +7,21 @@
 ## Table of Contents:
 * [Project Description](#project-description)
 * [User Story](#username)
-* [Credits](#credits)
-* [Features](#features)
 * [Contribution](#contribution)
 * [GitHub Profile Link](#github-profile)
 * [GitHub App Link](#app-github-link)
 * [Walkthrough video demonstrating App Functionality](#app-video-link)
-* [Screenshots:](#screenshots)
-    1. [Screenshot 1](#Screenshot-1)
-    2. [Screenshot 2](#Screenshot-2)
-
 
 
 ### Project Description:
 
-XYZ
+My challenge with this project is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I'm using Express.js for routing, a MongoDB database, and the Mongoose ODM, in addition to using the Express.js and Mongoose packages, I'm also using a JavaScript date library to format timestamps.
 
 ### User Story:
 
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
-
-### Credits:
-
-XYZ
-
-### Features:
-
-XYZ
 
 ### Contribution:
 
@@ -51,14 +37,4 @@ You can contribute to this project by accessing my GitHub page.
 
 ### App Video Link:
 
-[Walkthrough video demonstrating App Functionality](https://)
-
-### Screenshots:
-
-1. Screenshot 1:
-
-![Screenshot 1](screenshots/ "Screenshot 1")
-
-2. Screenshot 2:
-
-![Screenshot 2](screenshots/ "Screenshot 2")
+N/A

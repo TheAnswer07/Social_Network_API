@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: "",
     },
-    followers: {
+    friends: {
         type: Array,
         default: [],
     },
