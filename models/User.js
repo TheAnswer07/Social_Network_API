@@ -27,6 +27,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: "",
     },
+    thoughts: {
+        type: Array,
+        default: [],
+    },
     friends: {
         type: Array,
         default: [],
