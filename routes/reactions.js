@@ -48,5 +48,33 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
+//Getting a reaction
+
+router.get("/:id", async (req, res) => {
+    try {
+        const reaction = await Reaction.findById(req.params.id);
+        res.status(200).json(reaction);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
+
+//Getting all reactions from own account
+
+router.get("/reactions/all", async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.body.userId);
+        const userReactions = await Reaction.find({ userId: currentUser._id });
+        const friendReactions = await Promise.all(
+            currentUser.followings.map((friendId) => {
+            return Reaction.find({ userId: friendId });
+        })
+        );
+        res.json(userReactions.concat(...friendReactions));
+    } catch (err) {
+    res.status(500).json(err);
+}
+});
+
 
 module.exports = router;
