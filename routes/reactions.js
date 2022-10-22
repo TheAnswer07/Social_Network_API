@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const Reaction = require("../models/Reaction");
-const Thought = require("../models/Reaction")
 
 //Creating a reaction
 

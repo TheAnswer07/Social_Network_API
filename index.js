@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const thoughtRoute = require("./routes/thoughts");
+const reactionRoute = require("./routes/reactions");
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use(morgan("common"));
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/thoughts", thoughtRoute);
+app.use("/api/reactions", reactionRoute);
 
 mongoose.connect(process.env.MONGO_URL, 
     { useNewUrlParser: true, useUnifiedTopology: true }, 
