@@ -10,7 +10,7 @@
 * [Contribution](#contribution)
 * [GitHub Profile Link](#github-profile)
 * [GitHub App Link](#app-github-link)
-* [Walkthrough video demonstrating App Functionality](#app-video-link)
+* [Postman Walkthrough Video Link](#postman-walkthrough-video-link)
 
 
 ### Project Description:
@@ -35,6 +35,6 @@ You can contribute to this project by accessing my GitHub page.
 
 [GitHub App Link](https://github.com/TheAnswer07/Social_Network_API)
 
-### App Video Link:
+### Postman Walkthrough Video Link:
 
-N/A
+[Postman Walkthrough Video Link](https://drive.google.com/file/d/1dAMBkoNvNU0k1TzZAl0RJhtvz5zZPvgc/view)

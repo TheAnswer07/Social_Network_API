@@ -5,6 +5,10 @@ const ThoughtSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    thoughts: {
+        type: Array,
+        default: [],
+    },
     description: {
         type: String,
         max: 500,
